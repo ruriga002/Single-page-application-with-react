@@ -1,29 +1,82 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  margin: 0;
+  background: #ad9d5a
 }
 
 input, textarea {
   display: block;
-  margin: 10px 0;
-  padding: 8px;
+  margin: 10px 0 20px;
+  padding: 15px;
   width: 100%;
+  border: 2px solid rgb(74, 67, 67);
+  border-radius: 12px;
+  font-size: 1rem;
 }
-
+textarea {
+  resize: none;
+  min-height: 120px;
+}
 button {
-  padding: 10px;
+  padding: 20px;
   cursor: pointer;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  align-items: flex-start;
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-  margin-top: 20px;
+  gap: 20px;
 }
 
 .card {
-  padding: 15px;
-  border-radius: 10px;
-  background: #f4f4f4;
+  display: flex;
+  border-radius: 12px;
+  background: #93e919;
+  transition: 0.3s ease;
+  gap: 10px;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+ 
+}
+.card h3 {
+  font-size: 1.8rem;
+  margin-left: 20px;
+}
+.handleSubmit {
+  background: #4CAF50;
+  color: rgb(221, 196, 196);
+  border: none;
+}
+h1 {
+  color: #0d0606;
+  text-align: center;
+  margin: 0;
+  font-size: 3rem;
+  border-radius: 2px solid #bbb;
+ 
+}
+.projects-section {
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+
+}
+.search-input {
+  margin-bottom: 25px;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+}
+.card-content {
+  margin-left: 10px;
+
 }

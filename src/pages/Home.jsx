@@ -3,17 +3,22 @@ import SearchBar from "../components/SearchBar";
 import ProjectForm from "../components/ProjectForm";
 import ProjectList from "../components/ProjectList";
 
+import "../styles/main.css";
+
 function Home() {
   const [projects, setProjects] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
   return (
-    <div>
-      <h1>My Portfolio</h1>
+    <div className="container">
+      <h1>Personal Project Showcase App</h1>
+     
 
-      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <div className="projects-section">
       <ProjectForm projects={projects} setProjects={setProjects} />
       <ProjectList projects={projects} searchTerm={searchTerm} />
+      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+    </div>
     </div>
   );
 }
